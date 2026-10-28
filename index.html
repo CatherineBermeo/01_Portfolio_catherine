@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kyne — Creative Digital Designer</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            editorial: ['"Playfair Display"', '"Cormorant Garamond"', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            paper: '#f6f6f5',
+            ink: '#1c1b1a',
+            subtle: '#6a6864',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Cormorant Garamond, Playfair Display e Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* Tipografía editorial de alto contraste */
+    .font-hero-title {
+      font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    }
+
+    .font-cormorant {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    /* Animación de rotación continua para los sellos circulares */
+    @keyframes spin-badge {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .badge-rotate {
+      animation: spin-badge 16s linear infinite;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-[#f6f6f5] text-[#1c1b1a] antialiased selection:bg-[#ff5538] selection:text-white overflow-x-hidden min-h-screen">
+
+  <!-- ========================================== -->
+  <!-- SECCIÓN 1: PÁGINA INICIAL / HERO VIEWPORT   -->
+  <!-- (Referencia: Captura 2026-10-28 12.57.10)  -->
+  <!-- ========================================== -->
+  <section class="relative min-h-screen h-screen flex flex-col justify-between overflow-hidden">
+
+    <!-- Resplandor difuso inferior cálido (Coral Glow) -->
+    <div
+      class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[650px] sm:w-[900px] md:w-[1200px] h-[300px] sm:h-[400px] md:h-[460px] bg-gradient-to-t from-[#ff492c] via-[#ff6846]/75 to-transparent rounded-t-[100%] blur-[90px] sm:blur-[130px] md:blur-[150px] opacity-75 pointer-events-none -z-0">
+    </div>
+
+    <!-- Encabezado / Barra superior -->
+    <header class="w-full px-6 sm:px-12 md:px-16 pt-7 pb-4 flex justify-between items-center relative z-20">
+      <a href="#"
+        class="text-2xl sm:text-3xl font-serif italic font-bold tracking-tight text-[#1c1b1a] hover:opacity-75 transition-opacity">
+        kyne
+      </a>
+      <nav
+        class="flex items-center gap-5 sm:gap-8 md:gap-11 text-[11px] sm:text-xs font-sans tracking-[0.14em] uppercase text-[#1c1b1a]">
+        <a href="#work" class="hover:opacity-60 transition-opacity">(MY WORK)</a>
+        <a href="#about" class="hover:opacity-60 transition-opacity">(ABOUT ME)</a>
+        <a href="#contact" class="hover:opacity-60 transition-opacity">(LET'S TALK)</a>
+      </nav>
+    </header>
+
+    <!-- Contenido Central: Título Editorial con glifos perimetrales -->
+    <main class="flex-1 flex items-center justify-center px-4 relative z-10">
+      <div class="relative inline-block text-center px-6 sm:px-14 md:px-20 py-8 sm:py-12">
+
+        <!-- Glifo Superior Izquierdo: Estrella de 4 puntas (✦) -->
+        <div class="absolute -top-1 left-2 sm:-top-3 sm:left-6 md:-top-4 md:left-4 text-[#1c1b1a]">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12 0L14.4 9.6L24 12L14.4 14.4L12 24L9.6 14.4L0 12L9.6 9.6L12 0Z" />
+          </svg>
+        </div>
+
+        <!-- Glifo Superior Derecho Centro: Punto sólido (•) -->
+        <div class="absolute top-1 right-20 sm:top-0 sm:right-32 md:-top-2 md:right-44">
+          <span class="block w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#1c1b1a]"></span>
+        </div>
+
+        <!-- Glifo Superior Derecho: Cruz / Aspa (✕) -->
+        <div class="absolute -top-1 right-2 sm:-top-3 sm:right-6 md:-top-3 md:right-4 text-[#1c1b1a]">
+          <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5 stroke-current stroke-[2.5]" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4L20 20M20 4L4 20" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- Titular Principal con tipografía serif y cursivas alternadas -->
+        <h1
+          class="text-[#1c1b1a] font-hero-title text-5xl sm:text-7xl md:text-8xl lg:text-[104px] xl:text-[118px] leading-[0.93] tracking-[-0.035em]">
+          <div>hi, I’m <span class="font-cormorant italic font-normal">kyne</span></div>
+          <div><span class="font-cormorant italic font-normal">Creative</span></div>
+          <div><span class="font-cormorant italic font-normal">Digital</span> Designer.</div>
+        </h1>
+
+        <!-- Glifo Inferior Izquierdo: Trébol / Diamante de 4 puntos -->
+        <div class="absolute -bottom-1 left-2 sm:-bottom-3 sm:left-6 md:-bottom-4 md:left-4 text-[#1c1b1a]">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 24 24">
+            <circle cx="12" cy="4" r="2.4" />
+            <circle cx="4" cy="12" r="2.4" />
+            <circle cx="20" cy="12" r="2.4" />
+            <circle cx="12" cy="20" r="2.4" />
+          </svg>
+        </div>
+
+        <!-- Glifo Inferior Derecho: Triángulo de 3 puntos (∴) -->
+        <div class="absolute -bottom-1 right-2 sm:-bottom-3 sm:right-6 md:-bottom-3 md:right-4 text-[#1c1b1a]">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 24 24">
+            <circle cx="12" cy="5" r="2.4" />
+            <circle cx="5" cy="19" r="2.4" />
+            <circle cx="19" cy="19" r="2.4" />
+          </svg>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Pie del Hero: Indicador inferior de scroll -->
+    <div class="pb-7 sm:pb-8 text-center relative z-20">
+      <a href="#work"
+        class="inline-block text-[10px] sm:text-[11px] font-sans tracking-[0.22em] uppercase text-[#1c1b1a] hover:opacity-60 transition-opacity">
+        (SCROLL DOWN &amp; EXPLORE)
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SECCIÓN 2: SELECTED PROJECTS               -->
+  <!-- (Referencia: Captura 2026-10-28 12.59.28)  -->
+  <!-- ========================================== -->
+  <section id="work" class="min-h-screen border-t border-[#d8d8d6] bg-[#f6f6f5]">
+    <div class="grid grid-cols-1 lg:grid-cols-12 min-h-screen">
+
+      <!-- Columna Izquierda: Identidad y Título de Sección -->
+      <div
+        class="lg:col-span-5 border-b lg:border-b-0 lg:border-r border-[#d8d8d6] p-8 sm:p-12 lg:p-16 flex flex-col justify-between relative">
+
+        <!-- Logo superior izquierdo -->
+        <div>
+          <a href="#" class="text-2xl sm:text-3xl font-serif italic font-bold tracking-tight text-[#1c1b1a]">
+            kyne
+          </a>
+        </div>
+
+        <!-- Título central "selected projects" con glifos -->
+        <div class="my-20 lg:my-auto relative">
+          <!-- Glifo superior: Estrella de 4 puntas -->
+          <div class="mb-6 text-[#1c1b1a]">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 0L14.4 9.6L24 12L14.4 14.4L12 24L9.6 14.4L0 12L9.6 9.6L12 0Z" />
+            </svg>
+          </div>
+
+          <h2
+            class="text-5xl sm:text-6xl md:text-7xl font-cormorant italic font-medium leading-[0.92] text-[#1c1b1a] tracking-tight">
+            selected<br>projects
+          </h2>
+
+          <p class="mt-8 text-[10px] sm:text-[11px] font-sans tracking-[0.18em] uppercase text-[#6a6864]">
+            (TAKE A CLOSER LOOK AT SELECTED PROJECTS)
+          </p>
+
+          <!-- Glifo inferior: Trébol de 4 puntos -->
+          <div class="mt-12 text-[#1c1b1a]">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <circle cx="12" cy="4" r="2.4" />
+              <circle cx="4" cy="12" r="2.4" />
+              <circle cx="20" cy="12" r="2.4" />
+              <circle cx="12" cy="20" r="2.4" />
+            </svg>
+          </div>
+
+          <!-- Glifo lateral: Punto sólido -->
+          <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2">
+            <span class="block w-2 h-2 rounded-full bg-[#1c1b1a]"></span>
+          </div>
+        </div>
+
+        <!-- Espaciador inferior para equilibrar con la columna derecha -->
+        <div class="hidden lg:block"></div>
+      </div>
+
+      <!-- Columna Derecha: Navegación de sección y Lista de Proyectos -->
+      <div class="lg:col-span-7 flex flex-col justify-between">
+
+        <!-- Barra de navegación superior derecha -->
+        <div
+          class="px-6 sm:px-12 py-7 border-b border-[#d8d8d6] flex justify-end items-center gap-5 sm:gap-8 text-[11px] sm:text-xs font-sans tracking-[0.14em] uppercase text-[#1c1b1a]">
+          <span class="bg-[#f0e6e4] text-[#1c1b1a] px-2 py-0.5 rounded font-medium">(MY WORK)</span>
+          <a href="#about" class="hover:opacity-60 transition-opacity">(ABOUT ME)</a>
+          <a href="#contact" class="hover:opacity-60 transition-opacity">(LET'S TALK)</a>
+        </div>
+
+        <!-- Lista de Proyectos -->
+        <div class="flex-1 flex flex-col justify-around">
+
+          <!-- Proyecto 01: Ervy -->
+          <article class="p-8 sm:p-12 lg:p-16 border-b border-[#d8d8d6] relative">
+            <div class="flex flex-wrap items-baseline gap-3 sm:gap-4">
+              <span class="text-4xl sm:text-5xl font-cormorant font-normal text-[#1c1b1a]">(01)</span>
+              <span class="text-4xl sm:text-5xl font-cormorant font-semibold text-[#1c1b1a]">Ervy</span>
+              <span class="text-[10px] sm:text-[11px] font-sans tracking-[0.16em] uppercase text-[#6a6864]">
+                (AI-POWERED EDUCATION PLATFORM)
+              </span>
+            </div>
+
+            <div class="mt-14 sm:mt-24 flex justify-between items-end">
+              <a href="#"
+                class="text-2xl sm:text-3xl font-cormorant text-[#1c1b1a] hover:opacity-60 transition-opacity">
+                View Case Study
+              </a>
+
+              <!-- Sello circular interactivo "Go to Live Site" -->
+              <a href="#" class="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center group"
+                aria-label="Ir al sitio de Ervy">
+                <!-- Anillo con texto circular rotatorio -->
+                <svg class="w-full h-full badge-rotate" viewBox="0 0 100 100">
+                  <path id="circlePath1" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                  <text class="text-[8.5px] font-sans uppercase tracking-[0.22em] fill-[#1c1b1a]">
+                    <textPath href="#circlePath1" startOffset="0%">
+                      Go to Live Site • Go to Live Site •
+                    </textPath>
+                  </text>
+                </svg>
+                <!-- Icono central (Estrella) -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center text-[#1c1b1a] group-hover:scale-125 transition-transform">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 0L14.4 9.6L24 12L14.4 14.4L12 24L9.6 14.4L0 12L9.6 9.6L12 0Z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 02: SERIX -->
+          <article class="p-8 sm:p-12 lg:p-16 relative">
+            <div class="flex flex-wrap items-baseline gap-3 sm:gap-4">
+              <span class="text-4xl sm:text-5xl font-cormorant font-normal text-[#1c1b1a]">(02)</span>
+              <span class="text-4xl sm:text-5xl font-serif font-bold tracking-wide text-[#1c1b1a]">SERIX</span>
+              <span class="text-[10px] sm:text-[11px] font-sans tracking-[0.16em] uppercase text-[#6a6864]">
+                (AI-POWERED HEALTH INTELLIGENCE)
+              </span>
+            </div>
+
+            <div class="mt-14 sm:mt-24 flex justify-between items-end">
+              <a href="#"
+                class="text-2xl sm:text-3xl font-cormorant text-[#1c1b1a] hover:opacity-60 transition-opacity">
+                View Case Study
+              </a>
+
+              <!-- Sello circular interactivo "Go to Live Site" -->
+              <a href="#" class="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center group"
+                aria-label="Ir al sitio de SERIX">
+                <!-- Anillo con texto circular rotatorio -->
+                <svg class="w-full h-full badge-rotate" viewBox="0 0 100 100">
+                  <path id="circlePath2" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                  <text class="text-[8.5px] font-sans uppercase tracking-[0.22em] fill-[#1c1b1a]">
+                    <textPath href="#circlePath2" startOffset="0%">
+                      Go to Live Site • Go to Live Site •
+                    </textPath>
+                  </text>
+                </svg>
+                <!-- Icono central (Triángulo de 3 puntos) -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center text-[#1c1b1a] group-hover:scale-125 transition-transform">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <circle cx="12" cy="5" r="2.2" />
+                    <circle cx="5" cy="19" r="2.2" />
+                    <circle cx="19" cy="19" r="2.2" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
